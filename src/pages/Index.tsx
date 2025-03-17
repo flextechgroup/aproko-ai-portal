@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import FeaturedVideos from '../components/FeaturedVideos';
 import CommunityHighlights from '../components/CommunityHighlights';
+import HomepageSubscriptions from '../components/HomepageSubscriptions';
 import Footer from '../components/Footer';
 import { Shield, Users, Clock, Heart } from 'lucide-react';
 
@@ -96,6 +97,9 @@ const Index = () => {
         
         <FeaturedVideos />
         <CommunityHighlights />
+        
+        {/* Add the subscription section here */}
+        <HomepageSubscriptions />
         
         {/* CTA Section */}
         <div className="py-16 px-4 bg-primary-light">
