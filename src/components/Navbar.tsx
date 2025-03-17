@@ -1,12 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, User, Search, ChevronDown, Heart } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -22,6 +23,11 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleSignIn = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate('/coming-soon', { state: { pageName: 'Sign In' } });
+  };
 
   return (
     <nav
@@ -109,12 +115,13 @@ const Navbar = () => {
             >
               <Search className="h-5 w-5" />
             </button>
-            <Link
-              to="/profile"
+            <a
+              href="#"
+              onClick={handleSignIn}
               className="btn-primary"
             >
               Sign In
-            </Link>
+            </a>
           </div>
 
           <div className="md:hidden">
@@ -201,13 +208,17 @@ const Navbar = () => {
             >
               Community
             </Link>
-            <Link
-              to="/profile"
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                navigate('/coming-soon', { state: { pageName: 'Sign In' } });
+                setIsOpen(false);
+              }}
               className="block rounded-md px-3 py-2 text-base font-medium bg-primary text-white"
-              onClick={() => setIsOpen(false)}
             >
               Sign In
-            </Link>
+            </a>
           </div>
         </div>
       )}
