@@ -83,7 +83,7 @@ const CommunityHighlights = () => {
       id: 1,
       title: 'How to manage anxiety without medication?',
       excerpt:
-        'I've been struggling with anxiety lately and would prefer non-medication approaches first. What has worked for others?',
+        "I've been struggling with anxiety lately and would prefer non-medication approaches first. What has worked for others?",
       author: 'Sarah K.',
       avatar: 'https://i.pravatar.cc/150?img=1',
       replies: 24,
@@ -94,7 +94,7 @@ const CommunityHighlights = () => {
       id: 2,
       title: 'Is intermittent fasting actually beneficial?',
       excerpt:
-        'There's so much contradicting information about intermittent fasting. Can someone explain the actual science?',
+        "There's so much contradicting information about intermittent fasting. Can someone explain the actual science?",
       author: 'Michael T.',
       avatar: 'https://i.pravatar.cc/150?img=2',
       replies: 18,
@@ -105,7 +105,7 @@ const CommunityHighlights = () => {
       id: 3,
       title: 'Chronic back pain remedies that actually work',
       excerpt:
-        'After years of back pain and trying everything, here's what finally helped me. Looking for other experiences as well.',
+        "After years of back pain and trying everything, here's what finally helped me. Looking for other experiences as well.",
       author: 'James L.',
       avatar: 'https://i.pravatar.cc/150?img=3',
       replies: 31,
