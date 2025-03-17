@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -42,7 +41,7 @@ const NutritionHero = () => (
         <div className="relative order-first lg:order-last">
           <div className="aspect-square max-w-md mx-auto relative animate-float">
             <img 
-              src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&q=80" 
+              src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9" 
               alt="Fresh fruits and vegetables" 
               className="rounded-aproko object-cover w-full h-full shadow-card"
             />
