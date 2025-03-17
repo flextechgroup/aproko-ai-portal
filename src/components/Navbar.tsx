@@ -60,20 +60,28 @@ const Navbar = () => {
               Chat with AI
             </Link>
             <Link
-              to="/consultations"
+              to="/nutrition"
               className={`link-underline text-sm font-medium ${
-                isActive('/consultations') ? 'text-primary' : 'text-text-dark'
+                isActive('/nutrition') ? 'text-primary' : 'text-text-dark'
               }`}
             >
-              Consultations
+              Nutrition
             </Link>
             <Link
-              to="/videos"
+              to="/mental-health"
               className={`link-underline text-sm font-medium ${
-                isActive('/videos') ? 'text-primary' : 'text-text-dark'
+                isActive('/mental-health') ? 'text-primary' : 'text-text-dark'
               }`}
             >
-              Videos
+              Mental Health
+            </Link>
+            <Link
+              to="/fitness"
+              className={`link-underline text-sm font-medium ${
+                isActive('/fitness') ? 'text-primary' : 'text-text-dark'
+              }`}
+            >
+              Fitness
             </Link>
             <Link
               to="/community"
@@ -141,22 +149,31 @@ const Navbar = () => {
               Chat with AI
             </Link>
             <Link
-              to="/consultations"
+              to="/nutrition"
               className={`block rounded-md px-3 py-2 text-base font-medium ${
-                isActive('/consultations') ? 'bg-primary-light text-primary' : 'text-text-dark hover:bg-gray-100'
+                isActive('/nutrition') ? 'bg-primary-light text-primary' : 'text-text-dark hover:bg-gray-100'
               }`}
               onClick={() => setIsOpen(false)}
             >
-              Consultations
+              Nutrition
             </Link>
             <Link
-              to="/videos"
+              to="/mental-health"
               className={`block rounded-md px-3 py-2 text-base font-medium ${
-                isActive('/videos') ? 'bg-primary-light text-primary' : 'text-text-dark hover:bg-gray-100'
+                isActive('/mental-health') ? 'bg-primary-light text-primary' : 'text-text-dark hover:bg-gray-100'
               }`}
               onClick={() => setIsOpen(false)}
             >
-              Videos
+              Mental Health
+            </Link>
+            <Link
+              to="/fitness"
+              className={`block rounded-md px-3 py-2 text-base font-medium ${
+                isActive('/fitness') ? 'bg-primary-light text-primary' : 'text-text-dark hover:bg-gray-100'
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              Fitness
             </Link>
             <Link
               to="/community"
