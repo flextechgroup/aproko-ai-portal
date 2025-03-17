@@ -8,7 +8,7 @@ import {
   Heart, 
   Watch, 
   Flame, 
-  Lungs, 
+  Activity, 
   Utensils, 
   ChevronRight, 
   Clock, 
@@ -145,7 +145,7 @@ const Fitness = () => {
       description: 'Regular exercise strengthens your heart and improves your circulation, lowering your risk of heart diseases.',
     },
     {
-      icon: <Lungs className="h-6 w-6 text-primary" />,
+      icon: <Activity className="h-6 w-6 text-primary" />,
       title: 'Better Breathing',
       description: 'Physical activity can help your lungs and cardiovascular system work more efficiently.',
     },
