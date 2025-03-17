@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ChatInterface from '../components/ChatInterface';
@@ -97,9 +98,9 @@ const Chat = () => {
                     <p className="text-text-muted text-sm">
                       Your conversations are private and secure. We don't store personal health information without your explicit consent.
                     </p>
-                    <a href="/privacy" className="text-primary text-sm font-medium mt-2 inline-block hover:underline">
+                    <Link to="/privacy" className="text-primary text-sm font-medium mt-2 inline-block hover:underline">
                       Read our privacy policy
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

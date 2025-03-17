@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import FeaturedVideos from '../components/FeaturedVideos';
@@ -108,12 +109,12 @@ const Index = () => {
                 Get trustworthy information instantly.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="/chat" className="btn-primary w-full sm:w-auto">
+                <Link to="/chat" className="btn-primary w-full sm:w-auto">
                   Chat with Aproko AI
-                </a>
-                <a href="/consultations" className="btn-secondary w-full sm:w-auto">
+                </Link>
+                <Link to="/consultations" className="btn-secondary w-full sm:w-auto">
                   Book a Consultation
-                </a>
+                </Link>
               </div>
             </div>
           </div>

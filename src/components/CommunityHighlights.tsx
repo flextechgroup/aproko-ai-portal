@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { MessageSquare, ThumbsUp, ChevronRight, CheckCircle, AlertCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { MessageSquare, ThumbsUp, ChevronRight, CheckCircle, AlertCircle } from 'lucide-react';
 
 const DiscussionCard = ({
   title,
