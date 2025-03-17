@@ -84,6 +84,14 @@ const Navbar = () => {
               Fitness
             </Link>
             <Link
+              to="/consultations"
+              className={`link-underline text-sm font-medium ${
+                isActive('/consultations') ? 'text-primary' : 'text-text-dark'
+              }`}
+            >
+              Consultations
+            </Link>
+            <Link
               to="/community"
               className={`link-underline text-sm font-medium ${
                 isActive('/community') ? 'text-primary' : 'text-text-dark'
@@ -174,6 +182,15 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Fitness
+            </Link>
+            <Link
+              to="/consultations"
+              className={`block rounded-md px-3 py-2 text-base font-medium ${
+                isActive('/consultations') ? 'bg-primary-light text-primary' : 'text-text-dark hover:bg-gray-100'
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              Consultations
             </Link>
             <Link
               to="/community"

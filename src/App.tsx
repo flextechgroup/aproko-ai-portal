@@ -10,6 +10,7 @@ import Community from "./pages/Community";
 import Nutrition from "./pages/Nutrition";
 import MentalHealth from "./pages/MentalHealth";
 import Fitness from "./pages/Fitness";
+import Consultations from "./pages/Consultations";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/nutrition" element={<Nutrition />} />
           <Route path="/mental-health" element={<MentalHealth />} />
           <Route path="/fitness" element={<Fitness />} />
+          <Route path="/consultations" element={<Consultations />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
