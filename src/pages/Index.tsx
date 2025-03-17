@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -125,8 +126,8 @@ const Index = () => {
               <div className="md:w-1/2">
                 <AspectRatio ratio={16/9} className="overflow-hidden rounded-aproko shadow-soft">
                   <img 
-                    src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" 
-                    alt="Woman using health app on laptop" 
+                    src="https://nollywire.com/wp-content/uploads/2023/02/Egemba-Aproko-Doctor-Chinonso-Nollywire.jpg" 
+                    alt="Dr. Chinonso Egemba (Aproko Doctor)" 
                     className="w-full h-full object-cover"
                   />
                 </AspectRatio>
