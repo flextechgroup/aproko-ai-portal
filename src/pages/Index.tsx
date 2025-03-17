@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -8,6 +7,7 @@ import CommunityHighlights from '../components/CommunityHighlights';
 import HomepageSubscriptions from '../components/HomepageSubscriptions';
 import Footer from '../components/Footer';
 import { Shield, Users, Clock, Heart } from 'lucide-react';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const FeatureCard = ({ 
   icon, 
@@ -104,21 +104,32 @@ const Index = () => {
         {/* CTA Section */}
         <div className="py-16 px-4 bg-primary-light">
           <div className="container mx-auto max-w-6xl">
-            <div className="bg-white rounded-aproko p-8 shadow-card text-center animate-scale">
-              <h2 className="text-3xl font-bold mb-4">
-                Ready for Accurate Health Answers?
-              </h2>
-              <p className="text-text-muted max-w-2xl mx-auto mb-8">
-                Start your journey to better health understanding with AprokoHealth's AI assistant. 
-                Get trustworthy information instantly.
-              </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Link to="/chat" className="btn-primary w-full sm:w-auto">
-                  Chat with Aproko AI
-                </Link>
-                <Link to="/consultations" className="btn-secondary w-full sm:w-auto">
-                  Book a Consultation
-                </Link>
+            <div className="bg-white rounded-aproko p-8 shadow-card animate-scale flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2 text-center md:text-left">
+                <h2 className="text-3xl font-bold mb-4">
+                  Ready for Accurate Health Answers?
+                </h2>
+                <p className="text-text-muted max-w-2xl mx-auto md:mx-0 mb-8">
+                  Start your journey to better health understanding with AprokoHealth's AI assistant. 
+                  Get trustworthy information instantly.
+                </p>
+                <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                  <Link to="/chat" className="btn-primary w-full sm:w-auto">
+                    Chat with Aproko AI
+                  </Link>
+                  <Link to="/consultations" className="btn-secondary w-full sm:w-auto">
+                    Book a Consultation
+                  </Link>
+                </div>
+              </div>
+              <div className="md:w-1/2">
+                <AspectRatio ratio={16/9} className="overflow-hidden rounded-aproko shadow-soft">
+                  <img 
+                    src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" 
+                    alt="Woman using health app on laptop" 
+                    className="w-full h-full object-cover"
+                  />
+                </AspectRatio>
               </div>
             </div>
           </div>
