@@ -13,9 +13,9 @@ const SubscriptionPlans = () => {
     {
       name: 'Basic',
       description: 'Essential features for beginners',
-      priceMonthly: '$9.99',
-      priceYearly: '$99.90',
-      saving: 'Save $19.98',
+      priceMonthly: '₦1,500',
+      priceYearly: '₦15,000',
+      saving: 'Save ₦3,000',
       features: [
         { label: 'Personalized meal suggestions', included: true },
         { label: 'Basic workout plans', included: true },
@@ -30,9 +30,9 @@ const SubscriptionPlans = () => {
     {
       name: 'Pro',
       description: 'Perfect for dedicated health enthusiasts',
-      priceMonthly: '$19.99',
-      priceYearly: '$199.90',
-      saving: 'Save $39.98',
+      priceMonthly: '₦3,000',
+      priceYearly: '₦30,000',
+      saving: 'Save ₦6,000',
       features: [
         { label: 'Personalized meal suggestions', included: true },
         { label: 'Advanced workout plans', included: true },
@@ -47,9 +47,9 @@ const SubscriptionPlans = () => {
     {
       name: 'Ultimate',
       description: 'All features plus priority support',
-      priceMonthly: '$29.99',
-      priceYearly: '$299.90',
-      saving: 'Save $59.98',
+      priceMonthly: '₦5,000',
+      priceYearly: '₦50,000',
+      saving: 'Save ₦10,000',
       features: [
         { label: 'Personalized meal suggestions', included: true },
         { label: 'Advanced workout plans', included: true },

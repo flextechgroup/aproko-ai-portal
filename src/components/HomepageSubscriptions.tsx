@@ -8,7 +8,7 @@ const HomepageSubscriptions = () => {
   const plans = [
     {
       name: 'Basic',
-      price: '$9.99',
+      price: '₦1,500',
       period: '/month',
       description: 'Essential features for beginners',
       features: ['Personalized meal suggestions', 'Basic workout plans', 'Community forum access'],
@@ -18,7 +18,7 @@ const HomepageSubscriptions = () => {
     },
     {
       name: 'Pro',
-      price: '$19.99',
+      price: '₦3,000',
       period: '/month',
       description: 'Perfect for health enthusiasts',
       features: ['All Basic features', 'Advanced workout plans', '2 Expert consultations/month'],
@@ -29,7 +29,7 @@ const HomepageSubscriptions = () => {
     },
     {
       name: 'Ultimate',
-      price: '$29.99',
+      price: '₦5,000',
       period: '/month',
       description: 'All features plus priority support',
       features: ['All Pro features', 'Unlimited consultations', 'Priority support'],

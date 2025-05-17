@@ -15,12 +15,12 @@ const Subscriptions = () => {
         <section className="mb-12 text-center">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-secondary/20 text-secondary mb-4">
             <CrownIcon className="h-4 w-4 mr-2" />
-            <span className="text-sm font-medium">Premium Plans</span>
+            <span className="text-sm font-medium">Affordable Plans</span>
           </div>
           <h1 className="text-4xl font-bold mb-4">Unlock Premium Health Benefits</h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Choose the plan that fits your health journey. Gain access to personalized nutrition plans, 
-            expert consultations, and exclusive content to help you reach your health goals.
+            Choose the plan that fits your health journey and budget. Starting from just ₦1,500/month, 
+            gain access to personalized nutrition plans, expert consultations, and exclusive content.
           </p>
         </section>
         
