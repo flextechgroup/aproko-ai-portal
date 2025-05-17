@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Search, Info, User, Bot, CheckCircle } from 'lucide-react';
 
@@ -36,43 +35,33 @@ const ChatInterface = () => {
     return new Promise((resolve) => {
       // Simulate API call delay
       setTimeout(() => {
-        let response = '';
-        let sources = [];
-        let isVerified = false;
-
-        // Simple keyword-based responses for demo
-        if (query.toLowerCase().includes('headache')) {
-          response = "Headaches can be caused by various factors including stress, dehydration, lack of sleep, or underlying health conditions. For occasional headaches, rest, staying hydrated, and over-the-counter pain relievers may help. If you're experiencing severe, frequent, or unusual headaches, it's important to consult with a healthcare provider.";
-          sources = [
-            { title: 'Mayo Clinic - Headache', url: 'https://www.mayoclinic.org/symptoms/headache/basics/definition/sym-20050800' },
-            { title: 'NHS - Headaches', url: 'https://www.nhs.uk/conditions/headaches/' }
-          ];
-          isVerified = true;
-        } else if (query.toLowerCase().includes('sleep') || query.toLowerCase().includes('insomnia')) {
-          response = "Healthy sleep habits include maintaining a regular sleep schedule, creating a restful environment, limiting daytime naps, and avoiding caffeine and electronics before bedtime. Most adults need 7-9 hours of sleep per night. Persistent sleep problems may require medical attention.";
-          sources = [
-            { title: 'CDC - Sleep and Sleep Disorders', url: 'https://www.cdc.gov/sleep/index.html' },
-            { title: 'Sleep Foundation', url: 'https://www.sleepfoundation.org/' }
-          ];
-          isVerified = true;
-        } else if (query.toLowerCase().includes('diet') || query.toLowerCase().includes('nutrition')) {
-          response = "A balanced diet typically includes a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. Portion control and mindful eating are also important. Individual nutritional needs can vary based on age, sex, health status, and activity level.";
-          sources = [
-            { title: 'WHO - Healthy Diet', url: 'https://www.who.int/news-room/fact-sheets/detail/healthy-diet' },
-            { title: 'Harvard Health - Healthy Eating Plate', url: 'https://www.health.harvard.edu/staying-healthy/healthy-eating-plate' }
-          ];
-          isVerified = true;
-        } else {
-          response = "Thank you for your question. While I strive to provide accurate health information, I recommend consulting with a healthcare professional for personalized advice. Would you like me to provide some general information about this topic or redirect you to reliable health resources?";
+        // Create a fun greeting based on query
+        let greeting = "Hello there! 👋";
+        if (query.toLowerCase().includes('hi') || query.toLowerCase().includes('hello')) {
+          greeting = "Hi there, health explorer! 👋";
+        } else if (query.toLowerCase().includes('help')) {
+          greeting = "I'd love to help! 🌟";
+        } else if (query.toLowerCase().includes('thank')) {
+          greeting = "You're welcome! 😊";
         }
 
+        // Create the full response
+        const response = `${greeting} 
+
+I'm Aproko Health AI, your friendly health assistant! 🤖💊
+
+Just a quick note: I'm not fully implemented yet, so I might not have all the answers you need right now. We're still working on making me smarter!
+
+For personalized health advice and consultations, please reach out to an Aproko doctor directly. They're the real experts who can help with your specific health concerns.
+
+Thanks for your patience while I'm learning. Check back soon for updates! 🚀`;
+        
         resolve({
           id: Date.now().toString(),
           content: response,
           sender: 'bot',
           timestamp: new Date(),
-          isVerified,
-          sources,
+          isVerified: true,
         });
       }, 1500);
     });
